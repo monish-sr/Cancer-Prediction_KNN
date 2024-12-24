@@ -12,8 +12,11 @@ This project utilizes the Cancer dataset, which includes patient(s)'s cancer rel
 The methodology outlines the step-by-step process followed to design, train, evaluate, and deploy the machine learning model for predicting breast cancer as either Benign or Malignant. The pipeline ensures data integrity, scalability, and efficient learning using the k-Nearest Neighbors (k-NN) algorithm.
 
 **1. Understanding the Problem:** The objective is to classify breast cancer tumors into Benign (non-cancerous) or Malignant (cancerous) based on diagnostic features, aiding early diagnosis and treatment.
+
 **2. Dataset Preparation:** The dataset is loaded from a CSV file and includes diagnostic features such as radius_mean, texture_mean, perimeter_mean, and area_worst, along with a target variable (diagnosis) indicating tumor type.
+
 **3. Preprocessing:** The diagnosis column is encoded into numerical values (0 for benign, 1 for malignant), and the data is checked for missing values to ensure integrity.
+
 **4. Feature Scaling:** The feature values are normalized using MinMaxScaler to ensure uniformity, as k-NN relies on distance metrics.
 **5. Data Splitting:** The dataset is split into a training set (70%) and a testing set (30%) using train_test_split to evaluate the model's performance on unseen data.
 **6. Model Training:** The k-Nearest Neighbors (k-NN) algorithm is selected, and the model is trained with n_neighbors=8 on the normalized training dataset.
