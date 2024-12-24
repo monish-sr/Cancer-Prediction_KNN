@@ -18,9 +18,13 @@ The methodology outlines the step-by-step process followed to design, train, eva
 **3. Preprocessing:** The diagnosis column is encoded into numerical values (0 for benign, 1 for malignant), and the data is checked for missing values to ensure integrity.
 
 **4. Feature Scaling:** The feature values are normalized using MinMaxScaler to ensure uniformity, as k-NN relies on distance metrics.
+
 **5. Data Splitting:** The dataset is split into a training set (70%) and a testing set (30%) using train_test_split to evaluate the model's performance on unseen data.
+
 **6. Model Training:** The k-Nearest Neighbors (k-NN) algorithm is selected, and the model is trained with n_neighbors=8 on the normalized training dataset.
+
 **7. Model Evaluation:** The model is tested on the testing dataset, and its accuracy is calculated to assess how well it generalizes to unseen data.
+
 **8. Prediction Pipeline:** New sample data is normalized using the scaler, and the trained k-NN model predicts whether the tumor is Benign or Malignant.
 
 ## Results
